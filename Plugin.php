@@ -1,5 +1,7 @@
 <?php
 /**
+ * 在用户界面提供开启/关闭飘雪(snowstorm插件)能力
+ *
  * @package SnowstormSwitch
  * @author miracle2017
  * @version 1.0.0
