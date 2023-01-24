@@ -15,7 +15,10 @@ class SnowstormSwitch_Plugin implements Typecho_Plugin_Interface
      * @return void
      * @throws Typecho_Plugin_Exception
      */
-    public static function activate(){};
+    public static function activate(){
+        Typecho_Plugin::factory('Widget_Archive')->footer = array('SnowstormSwitch_Plugin', 'render');
+        return _t('插件已激活，现在可以对插件进行设置！');
+    };
 
     /**
      * 禁用插件方法,如果禁用失败,直接抛出异常
@@ -33,7 +36,7 @@ class SnowstormSwitch_Plugin implements Typecho_Plugin_Interface
      * @access public
      * @return void
      */
-    public static function footer()
+    public static function render()
     {
         echo '<button style="position: absolute; top: 1px; right: 1px" onclick="snowstormToggle($(this))">下雪on</button><script>function snowstormToggle(e){if(snowStorm.disabed){snowStorm.resume();$(this).innerText("下雪OFF")}else{snowStorm.stop();$(this).innerText("下雪ON")}}</script>';
     }
