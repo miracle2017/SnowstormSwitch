@@ -57,6 +57,6 @@ class SnowstormSwitch_Plugin implements Typecho_Plugin_Interface
      */
     public static function render()
     {
-        echo '<button style="position: absolute; top: 1px; right: 1px" onclick="snowstormToggle(this)">下雪on</button><script>function snowstormToggle(e){if(snowStorm.disabed){snowStorm.resume();e.innerText("下雪OFF")}else{snowStorm.stop();e.innerText("下雪ON")}}</script>';
+        echo '<button style="position: absolute; top: 1px; right: 1px" onclick="snowstormToggle(this)">下雪on</button><script>function snowstormToggle(e){if(snowStorm.disabed){snowStorm.resume();e.innerText="下雪OFF"}else{snowStorm.stop();e.innerText="下雪ON"}}</script>';
     }
 }
