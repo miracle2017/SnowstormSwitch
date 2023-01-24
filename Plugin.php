@@ -29,6 +29,25 @@ class SnowstormSwitch_Plugin implements Typecho_Plugin_Interface
      * @throws Typecho_Plugin_Exception
      */
     public static function deactivate(){}
+     
+    
+     /**
+     * 获取插件配置面板
+     * 
+     * @access public
+     * @param Typecho_Widget_Helper_Form $form 配置面板
+     * @return void
+     */
+    public static function config(Typecho_Widget_Helper_Form $form){}
+     
+     /**
+     * 个人用户的配置面板
+     * 
+     * @access public
+     * @param Typecho_Widget_Helper_Form $form
+     * @return void
+     */
+    public static function personalConfig(Typecho_Widget_Helper_Form $form){}
     
     /**
      * 设置参数，并加入脚部
