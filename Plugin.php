@@ -18,7 +18,7 @@ class SnowstormSwitch_Plugin implements Typecho_Plugin_Interface
     public static function activate(){
         Typecho_Plugin::factory('Widget_Archive')->footer = array('SnowstormSwitch_Plugin', 'render');
         return _t('插件已激活，现在可以对插件进行设置！');
-    };
+    }
 
     /**
      * 禁用插件方法,如果禁用失败,直接抛出异常
