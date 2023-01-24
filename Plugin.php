@@ -7,6 +7,26 @@
  */
 class SnowstormSwitch_Plugin implements Typecho_Plugin_Interface
 {
+     /**
+     * 启用插件方法,如果启用失败,直接抛出异常
+     *
+     * @static
+     * @access public
+     * @return void
+     * @throws Typecho_Plugin_Exception
+     */
+    public static function activate();
+
+    /**
+     * 禁用插件方法,如果禁用失败,直接抛出异常
+     *
+     * @static
+     * @access public
+     * @return void
+     * @throws Typecho_Plugin_Exception
+     */
+    public static function deactivate();
+    
     /**
      * 设置参数，并加入脚部
      *
