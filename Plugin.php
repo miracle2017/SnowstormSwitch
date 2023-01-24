@@ -28,7 +28,7 @@ class SnowstormSwitch_Plugin implements Typecho_Plugin_Interface
      * @return void
      * @throws Typecho_Plugin_Exception
      */
-    public static function deactivate(){};
+    public static function deactivate(){}
     
     /**
      * 设置参数，并加入脚部
